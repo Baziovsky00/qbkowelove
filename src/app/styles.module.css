@@ -1,0 +1,282 @@
+.page {
+    margin-top: 230px;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 10px;
+}
+
+.page h1 {
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 500;
+    color: #72266c;
+    animation: fadeIn 0.6s ease-in-out;
+    font-family: var(--font-geist-dancingScript);
+}
+
+.heroSectionPar {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 600px;
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #383838;
+    animation: fadeIn2 1.2s ease-in-out;
+}
+
+.topPageImages {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-radius: 6px;
+}
+
+.topPageImages img {
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    transition: 0.16s ease-in-out;
+}
+
+.topPageImages img:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.page h2 {
+    font-size: 2.5em;
+    color: #72266c;
+    font-weight: 600;
+    padding-top: 90px;
+}
+
+.page p {
+    color: #383838;
+}
+
+.aboutUsPar {
+    font-size: 1.1em;
+}
+
+.realizations {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.realizations div {
+    width: 400px;
+    min-width: 340px;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.realizations div h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.realizations div p {
+    font-size: 1em;
+    margin-top: 15px;
+    color: rgb(56, 56, 56);
+}
+
+.contactSection {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.contactSection h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.contactElement {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.contactElement svg {
+    font-size: 1.4em;
+}
+
+.ofertaList {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 20px;
+    color: black;
+
+}
+
+.ofertaItem {
+    padding: 1.5rem;
+    background-color: #f8f9fac0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #ff69b4;
+    border-radius: 4px;
+}
+
+.galleryContainer {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.imageItem {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imageItem:hover {
+    transform: scale(1.02);
+}
+
+.imageItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.closeButton:hover {
+    color: #ddd;
+}
+
+.galleryContainer {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.imageItem {
+    width: calc(33.333% - 1rem); /* 3 items per row with gap consideration */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imageItem:hover {
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+.imageItem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove the span classes since we want uniform sizes */
+.large, .wide, .tall {
+    width: calc(33.333% - 1rem); /* Override any spanning */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .imageItem {
+        width: calc(50% - 1rem); /* 2 items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .imageItem {
+        width: 100%; /* 1 item per row on mobile */
+    }
+}
