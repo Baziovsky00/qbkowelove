@@ -47,9 +47,9 @@ export default function Home() {
       <h1>QbkoweLove – Twój kubek, Twoja historia</h1>
       <p className={styles.heroSectionPar}>QbkoweLove to rodzinna firma, w której z pasją tworzymy personalizowane kubki. Każdy nasz projekt jest niepowtarzalny i pełen emocji. Poznaj nas bliżej i przekonaj się, jak możemy nadać wyjątkowy charakter Twoim prezentom!</p>
       <div className={styles.topPageImages}>
-        <Image src={'/images/IMG-20250320-WA0025.jpg'} width={380} height={380} alt="QbkoweLove - kubek dla par" />
-        <Image src={'/images/IMG-20250320-WA0004.jpg'} width={380} height={380} alt="QbkoweLove - kubek dla pary" />
-        <Image src={'/images/IMG-20250320-WA0018.jpg'} width={380} height={380} alt="QbkoweLove - kubek dla zięcia" />
+        <Image src={'/images/galeria22.jpg'} width={380} height={380} alt="QbkoweLove - kubek dla par" />
+        <Image src={'/images/galeria2.jpg'} width={380} height={380} alt="QbkoweLove - kubek dla pary" />
+        <Image src={'/images/galeria17.jpg'} width={380} height={380} alt="QbkoweLove - kubek dla zięcia" />
       </div>
       <AboutUs />
       <ExampleRealizations />
