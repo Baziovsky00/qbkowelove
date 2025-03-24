@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className={styles.footerContact}>
               <li>
                 <i className="fas fa-map-marker-alt"></i>
-                <span>Artura Grottera 28/3<br />44-102 Gliwice</span>
+                <span>Artura Grottgera 28/3<br />44-102 Gliwice</span>
               </li>
               <li>
                 <i className="fas fa-phone"></i>

@@ -39,7 +39,7 @@
 
 .topPageImages img {
     border-radius: 3px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
     transition: 0.16s ease-in-out;
 }
 
