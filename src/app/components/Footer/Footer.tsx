@@ -62,6 +62,7 @@ const Footer = () => {
             <Link href="/terms-of-service">Terms of Service</Link>
           </div> */}
         </div>
+        <Link style={{display: 'block', textAlign: 'center', fontSize: '0.9em', color: 'rgb(243, 243, 243)'}} href={'https://szymongabzdyl.vercel.app/'}>Strona stworzona przez Szymona Gabzdyla</Link>
       </div>
     </footer>
   );
